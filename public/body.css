@@ -1,0 +1,380 @@
+body {
+    background-color: #131a43;
+    height: 100%;
+    width: 100%;
+  } 
+
+  .load-screen {
+    background-color: #131a43;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .loader-wrapper {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -50px;
+    width: 50%;
+  }
+
+  #canvas {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0
+  }
+
+  .disply {
+      display: inline-block !important;
+  }
+
+  .hiexti {
+    fill: rgb(230, 107, 255) !important;
+  }
+
+  .iUYVrA {
+    fill: rgb(230, 107, 255, 0.3) !important;
+
+  }
+    .cXTZx {
+      box-shadow: none !important;
+      background: none !important;
+      height: 100vh !important;;
+    }
+    
+    .chat-bot > div{
+      box-shadow: none !important;
+      background: none !important;
+      z-index: 0;
+    }
+    
+    .rsc-ts-bubble {
+      box-shadow: none !important;
+      background-color: rgb(0,0,0,0.5) !important;
+      color: grey;
+    }
+    
+    .rsc-input {
+      border-top: none !important;
+      background-color: rgb(0,0,0,0.2) !important;
+      color: white;
+      font-size: 12px !important;
+    }
+  
+    .rsc-ts-user .rsc-ts-bubble {
+      background-color: #40E0D0 !important;
+      color: #131a43 !important;
+      font-size: 14px; 
+    }
+  
+    .rsc-os-option-element {
+      background-color: rgb(230, 107, 255) !important;
+      color: #131a43 !important;
+      font-size: 14px; 
+      cursor: pointer;
+    }
+
+    .jAOxce {
+      font-family: 'Courier Prime', monospace !important;
+      font-size: 12px !important;
+    }
+  
+  
+    @media only screen and (max-width: 500px) {
+  
+      .rsc-footer {
+        width: 70%;
+        padding: 20px;
+        position: relative;
+  
+      }
+  
+      .rsc-footer button {
+        right: 10px !important;
+        top: 20px !important;;
+      }
+
+      .menu {
+        background: linear-gradient( 
+          0deg
+           , rgba(19,25,67,0.2847514005602241) 40%, #40E0D0 100%);
+          
+      }
+
+    }
+  
+  
+    @media only screen and (min-width: 600px) {
+  
+      .react-wrapper {
+        max-width: 100%;
+        max-height: 100vh;
+        height: 100vh;
+        width: 100%;
+      }
+
+      .chat-bot {
+        padding-top: 40px;
+      }
+  
+      .chat-bot > div{
+          margin-left: 60px;
+      }
+      
+      .rsc-ts-bubble {
+        max-width: 100% !important;
+        font-size: 18px !important;
+      }
+      
+      .rsc-input {
+        font-size: 18px !important;
+      }
+  
+      .loader-wrapper {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        top: 50%;
+        margin-top: -50px;
+        width: 50%;
+      }
+
+   
+    }
+
+    .menu {
+      color: #131a43;
+      font-size: 20px;  
+      cursor: pointer;
+      position: absolute;
+      padding-left: 10px;
+      padding-top: 20px;
+      top: 0;
+      right: 0;
+      background-color: lightgrey ;
+      background: linear-gradient(
+        0deg
+        , rgba(19,25,67,0.2847514005602241) 0%, #40E0D0 100%);
+              transition: width .5s;
+      width: 30px;
+      height: 100%;
+      font-family: 'Major Mono Display', monospace;
+      overflow: hidden;
+    }
+
+    .menu.open {
+      width: 200px;
+    }
+
+    .menu-title {
+      position: absolute;
+      top: 50px;
+      left: 30px;
+      transform-origin: 0 0;
+      transform: rotate(90deg);
+      font-weight: 600;
+    }
+
+    
+    
+    .pop-up {
+      width: 300px;
+      height: 500px;
+      z-index: 100000;
+      right: 10px;
+      background-color: rgb(255, 255, 255,0.9) !important;
+      color: black !important;
+      border-radius: 10px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-animation: phone_u_d 10s ease-in-out infinite;
+      animation: phone_u_d 10s ease-in-out infinite;
+    }
+    
+    .pop-up span {
+      cursor: pointer;
+      float: right;
+      padding: 10px;
+      font-family: auto;
+      font-weight: bold;
+      font-size: 18px;
+      }
+
+    .pop-up h1, h2, h3, h4 {
+      font-family: 'Major Mono Display', monospace;
+      text-decoration: underline;
+
+    }
+
+    .pop-up p, a {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.5;  
+    }
+
+
+    .pop-up-content {
+        padding: 20px;
+        padding-right: 0;
+        overflow: auto;
+      }
+
+    ul {
+      list-style-type:none;
+      font-family: 'Major Mono Display', monospace;
+      font-weight: 600;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+
+    li:hover {
+      text-decoration: underline;
+
+    }
+    
+    @-webkit-keyframes phone_u_d {
+      0% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+      }
+    
+      50% {
+        -webkit-transform: translatey(-25px);
+        transform: translatey(-24px);
+      }
+    
+      100% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+      }
+    }
+    
+    @keyframes phone_u_d {
+      0% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+      }
+    
+      50% {
+        -webkit-transform: translatey(-40px);
+        transform: translatey(-50px);
+      }
+    
+      100% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+      }
+    }
+    
+   .draggable {
+      width: 1px;
+      height: 1px;
+      touch-action: none;
+      box-sizing: border-box;
+      margin-top: -500px;
+      margin-left: 40px;
+    }
+  
+    @media only screen and (min-width: 600px) {
+  
+      .draggable {
+        margin-top: -600px;
+        margin-left: 700px;
+      }
+  
+      .pop-up {
+        width: 500px;
+        height: 600px;
+        }
+
+        .pop-up-content {
+          padding: 40px;
+          padding-right: 0;
+          }
+    }
+
+    @media screen and (min-width: 992px) {
+   
+
+      }
+  
+  .resize-drag {
+      width: 120px;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 1rem;
+      background-color: #29e !important;
+      color: white;
+      font-size: 20px;
+      font-family: sans-serif;
+    
+      touch-action: none;
+    
+      /* This makes things *much* easier */
+      box-sizing: border-box;
+    }
+
+.game-img {
+  max-width: 550px;
+  width: 100%;
+  height: auto;
+}
+
+.pop-img{
+  max-width: 550px;
+  width: 100%;
+  height: auto;
+
+} 
+
+.comic-img1 {
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+}
+
+
+.comic-img2 {
+  width: 40%;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+   
+.pop-up a{
+  text-decoration: none;
+
+}
+
+.pop-up a {
+  color: #131a43;
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pop-up a:hover {
+  text-decoration: underline;
+  color: #40E0D0;
+}
+
+.pop-up a:active {
+  color: #131a43;
+}
+
+.pop-up a:visited {
+  color: rgb(230, 107, 255);
+}
+
+.pop-up hr {
+  border-top: 3px double rgb(230, 107, 255);
+}
+    
+    
